@@ -1,0 +1,210 @@
+/*Main*/
+body {
+  margin: 0;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+#logo-text {
+  display: none;
+  margin-left: 15px;
+  color: #131821;
+  font-size: 17px;
+}
+hr {
+  display: block;
+  height: 1px;
+  width: 295px;
+  border: 0;
+  border-top: 1px solid #e3e3e4;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#flex-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+#bg-img {
+  position: absolute;
+  background-image: url(img/image_summer_s.webp);
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 66px;
+  z-index: -1;
+}
+h1 {
+  margin: 0;
+  font-size: 24px;
+  font-family: Georgia;
+  font-weight: normal;
+  color: #131821;
+}
+#nav-bar {
+  margin: 10px 0 0 20px;
+  background-color: #ffffff;
+  height: 36px;
+}
+li {
+  display: inline;
+  margin-right: 20px;
+  padding-top: 20px;
+}
+li a {
+  text-decoration: none;
+  color: #6a707b;
+}
+ul {
+  display: inline;
+  float: right;
+  margin-top: 21px;
+  color: #6a707b;
+}
+#main-content {
+  width: 295px;
+  height: 311px;
+  padding: 30px 20px;
+  color: #6a707b;
+  background: linear-gradient(180deg, #ffffff 0%, #f2f5fa 100%);
+}
+#main-content p {
+  margin: 10px 0 20px 0;
+  line-height: 26px;
+}
+#checkbox {
+  width: 26px;
+  height: 26px;
+}
+#terms {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin-top: 20px;
+}
+#terms span {
+  font-size: 16px;
+  margin-left: 15px;
+}
+#tos:hover {
+  color: #4066a5;
+}
+#tos:active {
+  color: #233759;
+}
+#email {
+  height: 60px;
+  width: 100%;
+  border: 1px solid #e3e3e4;
+  border-left: 4px solid #4066a5;
+  padding-left: 15px;
+  z-index: 100;
+}
+#email:focus {
+  box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+  outline-width: 0;
+  border: 1px solid #e3e3e4;
+  border-left: 4px solid #4066a5;
+  transition: 0.7s ease-in-out;
+}
+#email:hover {
+  border: 1px solid #4066a5;
+  border-left: 4px solid #4066a5;
+  transition: 0.7s ease-in-out;
+}
+#email:hover + #arrow {
+  color: #4066a5;
+  opacity: 1;
+  transition: 0.7s ease-in-out;
+}
+#error-msg {
+  position: absolute;
+  transform: translateY(-15px);
+  font-size: 85%;
+  color: red;
+}
+#arrow {
+  color: #131821;
+  opacity: 0.3;
+  z-index: 101;
+}
+#btn-submit {
+  position: absolute;
+  padding: 0;
+  height: 64px;
+  transform: translateX(245px);
+  width: 50px;
+  z-index: 102;
+  opacity: 0;
+}
+#email::placeholder {
+  font-size: 16px;
+}
+#email-div {
+  display: flex;
+  width: 323px;
+}
+#email-div span {
+  transform: translate(-45px, 25px);
+}
+#tos {
+  color: #131821;
+}
+#social-media {
+  display: table;
+  margin: 0 auto;
+  line-height: 45px;
+}
+#social-media a {
+  text-align: center;
+  text-decoration: none;
+  color: #131821;
+  float: left;
+  width: 46px;
+  height: 46px;
+  box-sizing: border-box;
+  border: 2px solid #e3e3e4;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+#social-media a {
+  color: rgba(19, 24, 33, 0.3);
+  transition: 0.3s ease-in-out;
+}
+#social-media a:hover {
+  box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+#fb-icon:hover {
+  background: #4267b2;
+}
+#fb-icon:active {
+  background: #2f4a80;
+}
+#ig-icon:hover {
+  background: #c13584;
+}
+#ig-icon:active {
+  background: #8f2762;
+}
+#tw-icon:hover {
+  background: #1da1f2;
+}
+#tw-icon:active {
+  background: #177fbf;
+}
+#yt-icon:hover {
+  background: #ff0000;
+}
+#yt-icon:active {
+  background: #cc0000;
+}
+#ic-success {
+  height: 70px;
+  width: 40px;
+  margin-bottom: 30px;
+}
